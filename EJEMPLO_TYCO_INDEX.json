@@ -263,7 +263,7 @@
                     "Extension": {
                       "LineHeader": "Cabecera de Línea.",
                       "LineFooter": "Pie de Línea.",
-                      "AddressInSpain": {
+                      "LineAddress": {
                         "Address": "Calle Third Party",
                         "PostCode": "12345",
                         "Town": "Ciudad Third Party",
