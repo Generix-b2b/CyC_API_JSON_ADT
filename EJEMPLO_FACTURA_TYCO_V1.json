@@ -1,0 +1,156 @@
+{
+    "FacturaCyC": {
+        "FileHeader": {
+            "SchemaVersion": "3.2.2",
+            "Modality": "I",
+            "InvoiceIssuerType": "EM",
+            "Batch": {
+                "BatchIdentifier": "FD392503",
+                "InvoicesCount": 1,
+                "TotalInvoicesAmount": { "TotalAmount": 48.4 },
+                "TotalOutstandingAmount": { "TotalAmount": 48.4 },
+                "TotalExecutableAmount": { "TotalAmount": 48.4 },
+                "InvoiceCurrencyCode": "EUR"
+            }
+        },
+        "Invoices": [
+            {
+                "Parties": {
+                    "SellerParty": {
+                        "TaxIdentification": {
+                            "PersonTypeCode": "J",
+                            "ResidenceTypeCode": "R",
+                            "TaxIdentificationNumber": "B82115577"
+                        },
+                        "LegalEntity": {
+                            "CorporateName": "Tyco Integrated Security, S.L.",
+                            "RegistrationData": {
+                                "Book": "13489",
+                                "RegisterOfCompaniesLocation": "Mercantil de Madrid",
+                                "Sheet": "M-219133",
+                                "Folio": "93",
+                                "AdditionalRegistrationData": "2817 de 01-02-99"
+                            },
+                            "AddressInSpain": {
+                                "Address": "Ctra. de La Coruña km. 23,500",
+                                "PostCode": "28290",
+                                "Town": "Las Rozas",
+                                "Province": "Madrid",
+                                "CountryCode": "ESP"
+                            },
+                            "ContactDetails": {
+                                "Telephone": "+34 914 444 400",
+                                "WebAddress": "johnsoncontrols.es"
+                            }
+                        }
+                    },
+                    "BuyerParty": {
+                        "TaxIdentification": {
+                            "PersonTypeCode": "F",
+                            "ResidenceTypeCode": "R",
+                            "TaxIdentificationNumber": "B11111111"
+                        },
+                        "PartyIdentification": "01P06114TV",
+                        "AdministrativeCentre": {
+                            "RoleTypeCode": "01",
+                            "AddressInSpain": {
+                                "Address": "Direccion de entrega",
+                                "PostCode": "12345",
+                                "Town": "Ciudad",
+                                "Province": "Provincia",
+                                "CountryCode": "ESP"
+                            },
+                            "CentreDescription": "Centro Seller Party"
+                        },
+                        "LegalEntity": {
+                            "CorporateName": "Generix Group España",
+                            "AddressInSpain": {
+                                "Address": "Av. Ribera del Loira 8-10",
+                                "PostCode": "280462",
+                                "Town": "Madrid",
+                                "Province": "MADRID",
+                                "CountryCode": "ESP"
+                            }
+                        }
+                    }
+                },
+                "Invoice": {
+                    "InvoiceHeader": {
+                        "InvoiceNumber": "3A2000432",
+                        "InvoiceDocumentType": "FC",
+                        "InvoiceClass": "OO"
+                    },
+                    "InvoiceIssueData": {
+                        "IssueDate": "2023-01.01T00:00:00",
+                        "InvoicingPeriod": {
+                            "StartDate": "2023-01-01T00:00:00",
+                            "EndDate": "2023-01-31T00:00:00"
+                        },
+                        "InvoiceCurrencyCode": "EUR",
+                        "TaxCurrencyCode": "EUR",
+                        "LanguageName": "es"
+                    },
+                    "TaxesOutputs": [
+                        {
+                            "Tax": {
+                                "TaxTypeCode": "01",
+                                "TaxRate": 21.0,
+                                "TaxableBase": {
+                                    "TotalAmount": 40.0
+                                },
+                                "TaxAmount": {
+                                    "TotalAmount": 8.4
+                                }
+                            }
+                        }
+                    ],
+                    "InvoiceTotals": {
+                        "TotalGrossAmount": 48.4,
+                        "TotalGrossAmountBeforeTaxes": 40.0,
+                        "TotalTaxOutputs": 8.4,
+                        "TotalTaxesWithheld": 8.4,
+                        "InvoiceTotal": 48.4,
+                        "TotalOutstandingAmount": 48.4,
+                        "TotalExecutableAmount": 48.4
+                    },
+                    "Items": [
+                        {
+                            "InvoiceLine": {
+                                "SequenceNumber": 1,
+                                "ItemDescription": "Alarma",
+                                "Quantity": 1,
+                                "UnitPriceWithoutTax": 40,
+                                "TotalCost": 40.0,
+                                "GrossAmount": 48.4,
+                                "TaxesOutputs": [
+                                    {
+                                        "Tax": {
+                                            "TaxTypeCode": "01",
+                                            "TaxRate": 21.0,
+                                            "TaxableBase": {
+                                                "TotalAmount": 8.4
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "PaymentDetails": [
+                        {
+                            "Installment": {
+                                "InstallmentDueDate": "2023-01.01T00:00:00",
+                                "PaymentMeans": "02",
+                                "AccountToBeCredited": {
+                                    "IBAN": "ES57- 01824649810201511292",
+                                    "AccountNumber": "0182-4649-81-0201511292",
+                                    "BankCode": "BBVAESMM"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
