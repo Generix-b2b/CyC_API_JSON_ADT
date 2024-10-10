@@ -1,7 +1,7 @@
 {
   "FacturaCyC": {
     "FileHeader": {
-      "SchemaVersion": "3.2.1",
+      "SchemaVersion": "3.2.2",
       "Modality": "I",
       "InvoiceIssuerType": "TE",
       "ThirdParty": {
@@ -259,7 +259,7 @@
                 },
                 "ArticleCode": "12345",
                 "Extensions": {
-                  "AddressInSpain": {
+                  "LineAddress": {
                     "Address": "Calle Third Invoice",
                     "Address2": "Línea Calle Invoice",
                     "PostCode": "12345",
@@ -324,7 +324,16 @@
                   "StartDate": "2024-11-03T23:12:03",
                   "EndDate": "2024-11-10T23:12:03"
                 },
-                "ArticleCode": "12345"
+                "ArticleCode": "12345",
+                "Extensions": {
+                  "LineAddress": {
+                    "Address": "Calle Third Invoice",
+                    "Address2": "Línea Calle Invoice",
+                    "PostCode": "12345",
+                    "Town": "Ciudad Third Invoice",
+                    "CountryCode": "ES"
+                  }
+                }
               }
             }
           ],
