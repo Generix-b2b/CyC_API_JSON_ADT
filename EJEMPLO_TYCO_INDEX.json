@@ -264,12 +264,12 @@
                       "LineHeader": "Cabecera de Línea.",
                       "LineFooter": "Pie de Línea.",
                       "AddressInSpain": {
-                      "Address": "Calle Third Party",
-                      "PostCode": "12345",
-                      "Town": "Ciudad Third Party",
-                      "Province": "Provincia TP",
-                      "CountryCode": "ES"
-                    }
+                        "Address": "Calle Third Party",
+                        "PostCode": "12345",
+                        "Town": "Ciudad Third Party",
+                        "Province": "Provincia TP",
+                        "CountryCode": "ES"
+                      }
                     }
                   }
                 ]
