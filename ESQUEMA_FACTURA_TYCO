@@ -152,7 +152,8 @@
                           "type": "string",
                           "description": "Código país. Según la ISO 3166-1:2006. Al ser un domicilio ubicado en España siempre será 'ES'",
                           "enum": [
-                            "ES"
+                            "ESP",
+                            "ESC"
                           ]
                         }
                       },
@@ -372,7 +373,8 @@
                                   "type": "string",
                                   "description": "Código país. Según la ISO 3166-1:2006. Al ser un domicilio en España siempre será 'ES'",
                                   "enum": [
-                                    "ES"
+                                    "ESP",
+                                    "ESC"
                                   ]
                                 }
                               },
@@ -477,7 +479,8 @@
                                   "type": "string",
                                   "description": "Código país. Según la ISO 3166-1:2006. Al ser un domicilio en España siempre será 'ES'",
                                   "enum": [
-                                    "ES"
+                                    "ESP",
+                                    "ESC"
                                   ]
                                 }
                               },
@@ -616,7 +619,8 @@
                                   "type": "string",
                                   "description": "Código país. Según la ISO 3166-1:2006. Al ser un domicilio en España siempre será 'ES'",
                                   "enum": [
-                                    "ES"
+                                    "ESP",
+                                    "ESC"
                                   ]
                                 }
                               },
@@ -674,7 +678,8 @@
                                   "type": "string",
                                   "description": "Código país. Según la ISO 3166-1:2006. al ser un domicilio ubicado en España siempre será 'ES'",
                                   "enum": [
-                                    "ES"
+                                    "ESP",
+                                    "ESC"
                                   ]
                                 }
                               },
@@ -1285,63 +1290,59 @@
                                   "maxLength": 20
                                 },
                                 "Extensions": {
-                                  "type": "array",
+                                  "type": "object",
                                   "description": "Extensiones. Podrá incorporarse nuevas definiciones estructuradas cuando sean de interés conjunto para emisores y receptores, y no estén ya definidas en el esquema de la factura.",
                                   "properties": {
-                                    "Extension": {
+                                    "LineAddress": {
                                       "type": "object",
-                                      "description": "Objeto Extensiones.",
+                                      "description": "Dirección en España.",
                                       "properties": {
-                                        "LineHeader": {
+                                        "Name": {
                                           "type": "string",
-                                          "description": "Cabecera de Línea."
+                                          "description": "Nombre."
                                         },
-                                        "LineFooter": {
+                                        "Address": {
                                           "type": "string",
-                                          "description": "Pie de Línea"
+                                          "description": "Dirección. Tipo de vía, nombre, número, piso...",
+                                          "maxLength": 80
                                         },
-                                        "LineAddress": {
-                                          "type": "object",
-                                          "description": "Dirección en España.",
-                                          "properties": {
-                                            "Address": {
-                                              "type": "string",
-                                              "description": "Dirección. Tipo de vía, nombre, número, piso...",
-                                              "maxLength": 80
-                                            },
-                                            "PostCode": {
-                                              "type": "string",
-                                              "description": "Código postal asignado por correos.",
-                                              "minLength": 5,
-                                              "maxLength": 5
-                                            },
-                                            "Town": {
-                                              "type": "string",
-                                              "description": "Población. Correspondiente al C.P.",
-                                              "maxLength": 50
-                                            },
-                                            "Province": {
-                                              "type": "string",
-                                              "description": "Provincia. Dónde está situada la Población.",
-                                              "maxLength": 20
-                                            },
-                                            "CountryCode": {
-                                              "type": "string",
-                                              "description": "Código país. Según la ISO 3166-1:2006. Al ser un domicilio ubicado en España siempre será 'ESP'",
-                                              "enum": [
-                                                "ESP"
-                                              ]
-                                            }
-                                          },
-                                          "required": [
-                                            "Address",
-                                            "PostCode",
-                                            "Town",
-                                            "Province",
-                                            "CountryCode"
+                                        "Address2": {
+                                          "type": "string",
+                                          "description": "Dirección. Tipo de vía, nombre, número, piso...",
+                                          "maxLength": 80
+                                        },
+                                        "PostCode": {
+                                          "type": "string",
+                                          "description": "Código postal asignado por correos.",
+                                          "minLength": 5,
+                                          "maxLength": 5
+                                        },
+                                        "Town": {
+                                          "type": "string",
+                                          "description": "Población. Correspondiente al C.P.",
+                                          "maxLength": 50
+                                        },
+                                        "Province": {
+                                          "type": "string",
+                                          "description": "Provincia. Dónde está situada la Población.",
+                                          "maxLength": 20
+                                        },
+                                        "CountryCode": {
+                                          "type": "string",
+                                          "description": "Código país. Según la ISO 3166-1:2006. Al ser un domicilio ubicado en España siempre será 'ESP'",
+                                          "enum": [
+                                            "ESP",
+                                            "ESC"
                                           ]
                                         }
-                                      }
+                                      },
+                                      "required": [
+                                        "Address",
+                                        "PostCode",
+                                        "Town",
+                                        "Province",
+                                        "CountryCode"
+                                      ]
                                     }
                                   }
                                 }
@@ -1392,6 +1393,10 @@
                                     "IBAN": {
                                       "type": "string",
                                       "description": "IBAN. Único formato admitido para identificar la cuenta. (Recomendado)"
+                                    },
+                                    "AccountNumber": {
+                                      "type": "string",
+                                      "description": "Número de cuenta"
                                     }
                                   },
                                   "required": [
@@ -1478,6 +1483,20 @@
                               }
                             }
                           ]
+                        },
+                        "Extensions": {
+                          "type": "object",
+                          "description": "Extensiones. Podrá incorporarse nuevas definiciones estructuradas cuando sean de interés conjunto para emisores y receptores, y no estén ya definidas en el esquema de la factura.",
+                          "properties": {
+                            "LineHeader": {
+                              "type": "string",
+                              "description": "Cabecera de Línea."
+                            },
+                            "LineFooter": {
+                              "type": "string",
+                              "description": "Pie de Línea"
+                            }
+                          }
                         }
                       }
                     }

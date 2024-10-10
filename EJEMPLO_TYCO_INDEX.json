@@ -258,21 +258,15 @@
                   "EndDate": "2024-11-10T23:12:03"
                 },
                 "ArticleCode": "12345",
-                "Extensions": [
-                  {
-                    "Extension": {
-                      "LineHeader": "Cabecera de Línea.",
-                      "LineFooter": "Pie de Línea.",
-                      "LineAddress": {
-                        "Address": "Calle Third Party",
-                        "PostCode": "12345",
-                        "Town": "Ciudad Third Party",
-                        "Province": "Provincia TP",
-                        "CountryCode": "ES"
-                      }
-                    }
+                "Extensions": {
+                  "AddressInSpain": {
+                    "Address": "Calle Third Invoice",
+                    "Address2": "Línea Calle Invoice",
+                    "PostCode": "12345",
+                    "Town": "Ciudad Third Invoice",
+                    "CountryCode": "ES"
                   }
-                ]
+                }
               }
             },
             {
@@ -341,7 +335,8 @@
                 "InstallmentAmount": 7983.25,
                 "PaymentMeans": "04",
                 "AccountToBeCredited": {
-                  "IBAN": "ES8123456789123456"
+                  "IBAN": "ES8123456789123456",
+                  "AccountNumber": ""
                 },
                 "BankCode": "ABCD"
               }
@@ -361,7 +356,11 @@
                   "AttachmentData": ""
                 }
               }
-            ]
+            ],
+            "Exensions": {
+              "HeaderDescription": "Cabecera de Línea.",
+              "FooterDescription": "Pie de Línea."
+            }
           }
         }
       }
