@@ -345,7 +345,13 @@
                 "PaymentMeans": "04",
                 "AccountToBeCredited": {
                   "IBAN": "ES8123456789123456",
-                  "AccountNumber": ""
+                  "AccountNumber": "",
+                  "BankCode": "ABCD",
+                  "BIC": ""
+                },
+                "AccountToBeDebited": {
+                  "IBAN": "ES8123456789123456",
+                  "AccountNumber": "",
                   "BankCode": "ABCD",
                   "BIC": ""
                 },

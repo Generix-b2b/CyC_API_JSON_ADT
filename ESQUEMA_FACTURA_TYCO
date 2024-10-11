@@ -1414,6 +1414,34 @@
                                     "IBAN"
                                   ]
                                 },
+                                "AccountToBeDebited": {
+                                  "type": "object",
+                                  "description": "Cuenta de cargo. Único formato admitido. Cuando la forma de pago sea transferencia este dato será obligatorio.",
+                                  "properties": {
+                                    "IBAN": {
+                                      "type": "string",
+                                      "description": "IBAN. Único formato admitido para identificar la cuenta. (Recomendado)"
+                                    },
+                                    "AccountNumber": {
+                                      "type": "string",
+                                      "description": "Número de cuenta"
+                                    },
+                                    "BankCode": {
+                                      "type": "string",
+                                      "description": "Código de la entidad financiera.",
+                                      "maxLength": 60
+                                    },
+                                    "BIC": {
+                                      "type": "string",
+                                      "description": "Código SWIFT. Será obligatorio rellenar las 11 posiciones, utilizando los caracteres XXX cuando no se informe de la sucursal.",
+                                      "minLength": 11,
+                                      "maxLength": 11
+                                    }
+                                  },
+                                  "required": [
+                                    "IBAN"
+                                  ]
+                                },
                                 "PaymentReconciliationReference": {
                                   "type": "string",
                                   "description": "Referencia expresa del pago. Dato que precisa el Emisor para conciliar los pagos con cada factura.",
