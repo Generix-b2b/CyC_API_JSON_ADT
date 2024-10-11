@@ -1397,15 +1397,27 @@
                                     "AccountNumber": {
                                       "type": "string",
                                       "description": "Número de cuenta"
+                                    },
+                                    "BankCode": {
+                                      "type": "string",
+                                      "description": "Código de la entidad financiera.",
+                                      "maxLength": 60
+                                    },
+                                    "BIC": {
+                                      "type": "string",
+                                      "description": "Código SWIFT. Será obligatorio rellenar las 11 posiciones, utilizando los caracteres XXX cuando no se informe de la sucursal.",
+                                      "minLength": 11,
+                                      "maxLength": 11
                                     }
                                   },
                                   "required": [
                                     "IBAN"
                                   ]
                                 },
-                                "BankCode": {
+                                "PaymentReconciliationReference": {
                                   "type": "string",
-                                  "description": "Código de la entidad financiera."
+                                  "description": "Referencia expresa del pago. Dato que precisa el Emisor para conciliar los pagos con cada factura.",
+                                  "maxLength": 60
                                 }
                               },
                               "required": [
