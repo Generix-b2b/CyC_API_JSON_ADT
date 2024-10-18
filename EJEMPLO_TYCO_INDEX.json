@@ -259,8 +259,9 @@
                 },
                 "ArticleCode": "12345",
                 "Extensions": {
+                  "NameAddress": "Nombre InvoiceLine",
                   "LineAddress": {
-                    "Address": "Calle Third Invoice",
+                    "Address": "Calle Invoice",
                     "Address2": "Línea Calle Invoice",
                     "PostCode": "12345",
                     "Town": "Ciudad Third Invoice",
@@ -326,8 +327,9 @@
                 },
                 "ArticleCode": "12345",
                 "Extensions": {
+                  "NameAddress": "Nombre InvoiceLine",
                   "LineAddress": {
-                    "Address": "Calle Third Invoice",
+                    "Address": "Calle Invoice",
                     "Address2": "Línea Calle Invoice",
                     "PostCode": "12345",
                     "Town": "Ciudad Third Invoice",
@@ -345,16 +347,17 @@
                 "PaymentMeans": "04",
                 "AccountToBeCredited": {
                   "IBAN": "ES8123456789123456",
-                  "AccountNumber": "",
+                  "AccountNumber": "AccountNumberToBeCredited",
                   "BankCode": "ABCD",
-                  "BIC": ""
+                  "BIC": "ES12 1234 1234 12 1234567890"
                 },
                 "AccountToBeDebited": {
                   "IBAN": "ES8123456789123456",
-                  "AccountNumber": "",
+                  "AccountNumber": "AccountNumberToBeDebited",
                   "BankCode": "ABCD",
-                  "BIC": ""
+                  "BIC": "ES12 1234 1234 12 1234567890"
                 },
+                "CollectionAdditionalInformation": "Lorem Ipsum",
                 "PaymentReconciliationReference": "Lorem Ipsum"
               }
             }

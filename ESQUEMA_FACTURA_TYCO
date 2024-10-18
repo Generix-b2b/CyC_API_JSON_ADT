@@ -1293,6 +1293,10 @@
                                   "type": "object",
                                   "description": "Extensiones. Podrá incorporarse nuevas definiciones estructuradas cuando sean de interés conjunto para emisores y receptores, y no estén ya definidas en el esquema de la factura.",
                                   "properties": {
+                                    "NameAddress": {
+                                      "type": "string",
+                                      "description": "Nombre de la dirección."
+                                    },
                                     "LineAddress": {
                                       "type": "object",
                                       "description": "Dirección en España.",
