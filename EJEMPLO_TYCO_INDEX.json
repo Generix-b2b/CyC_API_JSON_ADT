@@ -377,7 +377,8 @@
                 }
               }
             ],
-            "Exensions": {
+            "Extensions": {
+              "InvoiceType": "Servicio",
               "HeaderDescription": "Cabecera de Línea.",
               "FooterDescription": "Pie de Línea."
             }
