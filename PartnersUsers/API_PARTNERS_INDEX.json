@@ -1,0 +1,93 @@
+{
+    "partners": [
+      {
+        "partnerID": "1234567890123",
+        "gcnId": "GC12345678901",
+        "subscriberCode": "UIkJCora5wUYuZJMFKLau7cHKyIAVhte",
+        "vatCode": "ES12345678Z",
+        "registrationCode": "REG123456",
+        "legalReference": "GC12345678901",
+        "name": "Partner Ejemplo S.A.",
+        "address": {
+          "addressLines": ["Calle Ejemplo 123", "Piso 4"],
+          "zipCode": "28001",
+          "city": "Madrid",
+          "countryCode": "ES",
+          "contact": "Nombre Apellido",
+          "phoneNumber": "+34 912345678",
+          "faxNumber": "+34 912345679",
+          "emailAddress": "contacto@partnerejemplo.com"
+        },
+        "vatRegime": "VR1",
+        "eReporting": "ER1",
+        "registeredName": "Partner Ejemplo S.A.",
+        "legalStructure": "Sociedad Anónima",
+        "shareCapital": "1000000",
+        "profileName": "Perfil Ejemplo",
+        "users": [
+          {
+            "lastName": "Apellido",
+            "firstName": "Nombre",
+            "phone": "+34 912345678",
+            "email": "nombre.apellido@partnerejemplo.com",
+            "locale": "es",
+            "mobile": "+34 612345678",
+            "disabled": false,
+            "notification": true,
+            "generatePassword": true,
+            "userType": "PARTNER"
+          },
+          {
+            "lastName": "Apellido2",
+            "firstName": "Nombre2",
+            "phone": "+34 912345678",
+            "email": "nombre2.apellido2@partnerejemplo.com",
+            "locale": "es",
+            "mobile": "+34 612345678",
+            "disabled": false,
+            "notification": true,
+            "generatePassword": true,
+            "userType": "PARTNER"
+          }
+        ]
+      },
+      {
+        "partnerID": "9876543210987",
+        "partner": {
+          "gcnId": "GC98765432109",
+          "subscriberCode": "YUiKJora5wUYuZJMFKLau7cHKyIAVhtf",
+          "vatCode": "ES87654321X",
+          "registrationCode": "REG987654",
+          "legalReference": "GC98765432109",
+          "name": "Nuevo Partner S.L.",
+          "address": {
+            "addressLines": ["Avenida Nuevo 456", "Piso 2"],
+            "zipCode": "28002",
+            "city": "Madrid",
+            "countryCode": "ES",
+            "contact": "Nombre2 Apellido2",
+            "phoneNumber": "+34 917654321",
+            "faxNumber": "+34 917654322",
+            "emailAddress": "contacto@nuevopartner.com"
+          },
+          "disabled": "no"
+        },
+        "users": [
+          {
+            "user": {
+              "lastName": "Vazquez",
+              "firstName": "Jacinto",
+              "phone": "+34 917654321",
+              "email": "jacinto.vazquez@nuevopartner.com",
+              "locale": "es",
+              "mobile": "+34 617654321",
+              "disabled": "no",
+              "notification": "yes",
+              "generatePwd": "yes"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
