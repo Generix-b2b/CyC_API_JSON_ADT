@@ -30,7 +30,6 @@
                 "email": "nombre.apellido@partnerejemplo.com",
                 "locale": "es",
                 "mobile": "+34 612345678",
-                "disabled": "no",
                 "notification": "yes",
                 "generatePwd": "yes"
             }
@@ -43,7 +42,6 @@
                 "email": "nombre2.apellido2@partnerejemplo.com",
                 "locale": "es",
                 "mobile": "+34 612344868",
-                "disabled": "no",
                 "notification": "yes",
                 "generatePwd": "yes"
             }
@@ -80,7 +78,6 @@
               "email": "jacinto.vazquez@nuevopartner.com",
               "locale": "es",
               "mobile": "+34 617654321",
-              "disabled": "no",
               "notification": "yes",
               "generatePwd": "yes"
             }
