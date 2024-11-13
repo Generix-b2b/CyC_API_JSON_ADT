@@ -187,11 +187,6 @@
                       "description": "Numero de telefono movil del contacto.",
                       "maxLength": 128
                     },
-                    "disabled": {
-                      "type": "string",
-                      "description": "Impedir que el usuario acceda al portal en su próxima conexión.",
-                      "enum": ["yes", "no"]
-                    },
                     "notification": {
                       "type": "string",
                       "description": "Asigna el rol de Notificacion al usuario",
