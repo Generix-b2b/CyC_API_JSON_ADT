@@ -6,8 +6,6 @@
             "gcnId": "GC12345678901",
             "subscriberCode": "UIkJCora5wUYuZJMFKLau7cHKyIAVhte",
             "vatCode": "ES12345678Z",
-            "registrationCode": "REG123456",
-            "legalReference": "GC12345678901",
             "name": "Partner Ejemplo S.A.",
             "address": {
                 "addressLines": ["Calle Ejemplo 123", "Piso 4"],
@@ -16,7 +14,6 @@
                 "countryCode": "ES",
                 "contact": "Nombre Apellido",
                 "phoneNumber": "+34 912345678",
-                "faxNumber": "+34 912345679",
                 "emailAddress": "contacto@partnerejemplo.com"
             },
             "disabled": "no"
@@ -30,6 +27,7 @@
                 "email": "nombre.apellido@partnerejemplo.com",
                 "locale": "es",
                 "mobile": "+34 612345678",
+                "disabled": "no",
                 "notification": "yes",
                 "generatePwd": "yes"
             }
@@ -42,6 +40,7 @@
                 "email": "nombre2.apellido2@partnerejemplo.com",
                 "locale": "es",
                 "mobile": "+34 612344868",
+                "disabled": "no",
                 "notification": "yes",
                 "generatePwd": "yes"
             }
@@ -78,6 +77,7 @@
               "email": "jacinto.vazquez@nuevopartner.com",
               "locale": "es",
               "mobile": "+34 617654321",
+              "disabled": "no",
               "notification": "yes",
               "generatePwd": "yes"
             }
