@@ -135,6 +135,12 @@
                 "type": "string",
                 "maxLength": 4000
               },
+              "freeBoolean1": {
+                "type": "boolean"
+              },
+              "freeBoolean2": {
+                "type": "boolean"
+              },
               "freeDate01": {
                 "type": "string",
                 "description": "YYYY-MM-DD (2024-01-01)",
@@ -186,6 +192,11 @@
                       "type": "string",
                       "description": "Numero de telefono movil del contacto.",
                       "maxLength": 128
+                    },
+                    "disabled": {
+                      "type": "string",
+                      "description": "Impedir que el usuario acceda al portal en su próxima conexión.",
+                      "enum": ["yes", "no"]
                     },
                     "notification": {
                       "type": "string",
