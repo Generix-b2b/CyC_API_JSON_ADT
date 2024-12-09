@@ -1,35 +1,34 @@
 {
-  "registration": [
+  "users": [
     {
-      "partnerID": "1234567890123",
-      "users": [
-        {
-          "user": {
-              "lastName": "Apellido",
-              "firstName": "Nombre",
-              "phone": "+34 912345678",
-              "email": "nombre.apellido@partnerejemplo.com",
-              "locale": "es",
-              "mobile": "+34 612345678",
-              "disabled": "no",
-              "notification": "yes",
-              "generatePwd": "yes"
-          }
-        },
-        {
-          "user": {
-              "lastName": "Apellido2",
-              "firstName": "Nombre2",
-              "phone": "+34 912345679",
-              "email": "nombre2.apellido2@partnerejemplo.com",
-              "locale": "es",
-              "mobile": "+34 612344868",
-              "disabled": "no",
-              "notification": "yes",
-              "generatePwd": "yes"
-          }
-        }
-      ]
+      "user": {
+        "partnerID": "1234567890123",
+        "perimeterIdentifications": ["NIF123123123", "CIF234234234"],
+        "lastName": "Apellido",
+        "firstName": "Nombre",
+        "phone": "+34 912345678",
+        "email": "nombre.apellido@partnerejemplo.com",
+        "locale": "es",
+        "mobile": "+34 612345678",
+        "disabled": "no",
+        "notification": "yes",
+        "generatePwd": "yes"
+      }
+    },
+    {
+      "user": {
+        "partnerID": "1234567890123",
+        "perimeterIdentifications": ["NIF123123123", "CIF234234234"],
+        "lastName": "Apellido2",
+        "firstName": "Nombre2",
+        "phone": "+34 912345678",
+        "email": "nombre.apellido@partnerejemplo.com",
+        "locale": "es",
+        "mobile": "+34 912345678",
+        "disabled": "no",
+        "notification": "yes",
+        "generatePwd": "yes"
+      }
     }
   ]
 }
