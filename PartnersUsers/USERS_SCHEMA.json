@@ -16,13 +16,6 @@
                 "description": "Identificador unico del partner. Esta información se utiliza en los intercambios con el cliente y en los documentos asociados con el partner.",
                 "maxLength": 128
               },
-              "perimeterIdentifications": {
-                "type": "array",
-                "description": "Lista de los diferentes NIF/CIF de las empresas cuyas facturas el usuario puede visualizar, excluyendo el partnerID",
-                "items": {
-                  "type": "string"
-                }
-              },
               "lastName": {
                 "type": "string",
                 "description": "Primer apellido del contacto.",
