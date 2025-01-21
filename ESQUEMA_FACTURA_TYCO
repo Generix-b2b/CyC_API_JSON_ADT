@@ -1390,10 +1390,14 @@
                                   "type": "string",
                                   "description": "Cada vencimiento/importe podrá tener un medio de pago concreto."
                                 },
+                                {
+                                  "oneOf": [
                                 "AccountToBeCredited": {
                                   "type": "object",
                                   "description": "Cuenta de abono. Único formato admitido. Cuando la forma de pago sea transferencia este dato será obligatorio.",
                                   "properties": {
+                                        {
+                                          "oneOf": [
                                     "IBAN": {
                                       "type": "string",
                                       "description": "IBAN. Único formato admitido para identificar la cuenta. (Recomendado)"
@@ -1401,6 +1405,8 @@
                                     "AccountNumber": {
                                       "type": "string",
                                       "description": "Número de cuenta"
+                                            }
+                                          ]
                                     },
                                     "BankCode": {
                                       "type": "string",
@@ -1422,6 +1428,8 @@
                                   "type": "object",
                                   "description": "Cuenta de cargo. Único formato admitido. Cuando la forma de pago sea transferencia este dato será obligatorio.",
                                   "properties": {
+                                        {
+                                          "oneOf": [
                                     "IBAN": {
                                       "type": "string",
                                       "description": "IBAN. Único formato admitido para identificar la cuenta. (Recomendado)"
@@ -1429,6 +1437,8 @@
                                     "AccountNumber": {
                                       "type": "string",
                                       "description": "Número de cuenta"
+                                            }
+                                          ]
                                     },
                                     "BankCode": {
                                       "type": "string",
@@ -1445,7 +1455,10 @@
                                   "required": [
                                     "IBAN"
                                   ]
-                                },
+                                    }
+                                  ]  
+                                }
+                                ,
                                 "PaymentReconciliationReference": {
                                   "type": "string",
                                   "description": "Referencia expresa del pago. Dato que precisa el Emisor para conciliar los pagos con cada factura.",
