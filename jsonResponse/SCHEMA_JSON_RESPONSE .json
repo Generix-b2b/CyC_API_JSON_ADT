@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "documentType": {
+            "type": "string",
+            "description": "Tipo de documento",
+            "enum": ["USER", "PARTNER", "INVOICE", "PERIMETER"]
+        },                        
+        "response": {
+            "type": "array",
+            "items": {
+                "uuid": {
+                    "type": "string",
+                    "description": "Referencia que dependera del tipo. (Email, DNI/CIF, Número de Factura)"
+                },
+                "status":{
+                    "type": "string",
+                    "description": "Estado del porceso",
+                    "enum": ["OK", "ERROR"]
+                },
+                "field": {
+                    "type": "string",
+                    "description": "Campo donde se ha detectado el error."
+                },
+                "receivedValue": {
+                    "type": "string",
+                    "description": "Valor que se ha recibido en el campo donde se ha detectado el error."
+                },
+                "expectedValue": {
+                    "type": "string",
+                    "description": "Valor que se espera en un campo, como por ejemplo si se ha definido alguna enumeración."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Descripcion del error."
+                }
+            },
+            "required": [
+                "uuid",
+                "status"                
+            ]
+        }
+    },
+    "required": [
+        "DocumentType"
+    ]
+}

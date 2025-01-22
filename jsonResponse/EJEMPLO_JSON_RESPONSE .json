@@ -1,0 +1,17 @@
+{
+    "documentType": "USER",
+    "response": [
+        {
+          "uuid": "ejemplo@ejemplo.com",
+          "status": "ERROR",
+          "field": "partnerID",
+          "receivedValue": "received_value",
+          "expectedValue": "expected_value",
+          "message": "El partner enviado está vacío"
+        },
+        {
+            "uuid": "ejemplo@ejemplo.com",
+            "status": "OK"
+        }
+    ]
+}
