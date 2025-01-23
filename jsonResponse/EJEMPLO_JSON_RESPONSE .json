@@ -3,6 +3,7 @@
     "response": [
         {
           "uuid": "ejemplo@ejemplo.com",
+          "timestamp": "20250123080013",
           "status": "ERROR",
           "field": "partnerID",
           "receivedValue": "received_value",
@@ -11,6 +12,7 @@
         },
         {
             "uuid": "ejemplo@ejemplo.com",
+            "timestamp": "20250123080013",
             "status": "OK"
         }
     ]
