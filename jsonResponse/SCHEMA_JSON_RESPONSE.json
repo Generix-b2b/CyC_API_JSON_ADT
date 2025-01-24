@@ -24,25 +24,36 @@
                     "description": "Estado del porceso",
                     "enum": ["OK", "ERROR"]
                 },
-                "field": {
-                    "type": "string",
-                    "description": "Campo donde se ha detectado el error."
-                },
-                "receivedValue": {
-                    "type": "string",
-                    "description": "Valor que se ha recibido en el campo donde se ha detectado el error."
-                },
-                "expectedValue": {
-                    "type": "string",
-                    "description": "Valor que se espera en un campo, como por ejemplo si se ha definido alguna enumeraci√≥n."
-                },
-                "message": {
-                    "type": "string",
-                    "description": "Descripcion del error."
+                "errors": {
+                    "type": "array",
+                    "items": {
+                      "error": {
+                        "type": "string",
+                        "description": "CÛdigo de error"
+                      },
+                      "receivedValue": {
+                        "type": "string",
+                        "description": "Valor recibido"
+                      },
+                      "expectedValue": {
+                        "type": "string",
+                        "description": "Valor recibido"
+                      },
+                      "message": {
+                        "type": "string",
+                        "description": "Mensaje de error"
+                      }
+                    },
+                    "required": [
+                        "error",
+                        "receivedValue",
+                        "message"
+                    ]
                 }
             },
             "required": [
                 "uuid",
+                "timestamp",
                 "status"                
             ]
         }
