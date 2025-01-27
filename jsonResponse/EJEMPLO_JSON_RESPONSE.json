@@ -9,13 +9,13 @@
           {
             "error": "BT-69 CountryCode",
             "receivedvalue": "URN",
-            "expectedValue": "ESP,ESC",
+            "expectedvalue": "ESP,ESC",
             "message": ": Valor no permitido = URN"
           },
           {
             "error": "BT-129 Quantity",
             "receivedvalue": "",
-            "expectedValue": "",
+            "expectedvalue": "",
             "message": "Valor BT-129 Quantity Obligatorio."
           }
         ]
