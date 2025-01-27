@@ -12,7 +12,7 @@
             "items": {
                 "uuid": {
                     "type": "string",
-                    "description": "Referencia que dependera del tipo. (Email, DNI/CIF, NÃºmero de Factura)"
+                    "description": "Referencia que dependera del tipo. (Email, DNI/CIF, Identificador de lote)"
                 },
                 "timestamp": {
                     "type": "string",
