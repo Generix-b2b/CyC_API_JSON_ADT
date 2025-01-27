@@ -12,11 +12,11 @@
             "items": {
                 "uuid": {
                     "type": "string",
-                    "description": "Referencia que dependera del tipo. (Email, DNI/CIF, Número de Factura)"
+                    "description": "Referencia que dependera del tipo. (Email, DNI/CIF, NÃºmero de Factura)"
                 },
                 "timestamp": {
                     "type": "string",
-                    "description": "Registro de fecha y hora en la que se gener� el error. AAAAMMDDHHMMSS",
+                    "description": "Registro de fecha y hora en la que se generó el error. AAAAMMDDHHMMSS",
                     "pattern": "^\\d{4}(0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01])([01]\\d|2[0-3])[0-5]\\d[0-5]\\d$"
                 },
                 "status":{
@@ -29,13 +29,13 @@
                     "items": {
                       "error": {
                         "type": "string",
-                        "description": "C�digo de error"
+                        "description": "Código de error"
                       },
-                      "receivedValue": {
+                      "receivedvalue": {
                         "type": "string",
                         "description": "Valor recibido"
                       },
-                      "expectedValue": {
+                      "expectedvalue": {
                         "type": "string",
                         "description": "Valor recibido"
                       },
