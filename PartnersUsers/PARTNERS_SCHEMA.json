@@ -8,12 +8,12 @@
       "properties": {
         "partnerID": {
           "type": "string",
-          "description": "Identificador unico del partner. Esta informaci髇 se utiliza en los intercambios con el cliente y en los documentos asociados con el partner.",
+          "description": "Identificador unico del partner. Esta informaci贸n se utiliza en los intercambios con el cliente y en los documentos asociados con el partner.",
           "maxLength": 128
         },
         "gcnId": {
           "type": "string",
-          "description": "Identificaci髇 del socio en el conjunto del ecosistema Generix.",
+          "description": "Identificaci贸n del socio en el conjunto del ecosistema Generix.",
           "maxLength": 225
         },
         "subscriberCode": {
@@ -39,7 +39,7 @@
               "maxItems": 2,
               "items": {
                 "type": "string",
-                "description": "L韓eas de la direccion.",
+                "description": "L铆neas de la direccion.",
                 "maxLength": 38
               }
             },
@@ -83,11 +83,12 @@
         },
         "disabled": {
           "type": "string",
-          "description": "Activaci髇 y desactivaci髇 de usuario.",
+          "description": "Activaci贸n y desactivaci贸n de usuario.",
           "enum": ["yes", "no"]
         },
         "freeText01": {
           "type": "string",
+          "description": "Nombre del partner para identificaci贸n de generix.",
           "maxLength": 255
         },
         "freeText02": {
@@ -116,7 +117,9 @@
         },
         "freeText08": {
           "type": "string",
-          "maxLength": 255
+          "description": "Env铆o de pdf en la notificaci贸n de factura.",
+          "enum": ["yes", "no"],
+          "maxLength": 3
         },
         "freeText09": {
           "type": "string",
