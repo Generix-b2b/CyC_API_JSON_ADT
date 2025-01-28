@@ -14,6 +14,7 @@
       "emailAddress": "contacto@partnerejemplo.com"
     },
     "disabled": "no",
-    "freeText01": "EMBOU"
+    "freeText01": "EMBOU",
+    "freeText08": "yes"
   }
 }
