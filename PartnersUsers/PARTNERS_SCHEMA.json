@@ -88,7 +88,6 @@
         },
         "freeText01": {
           "type": "string",
-          "description": "Nombre del partner para identificación de generix.",
           "maxLength": 255
         },
         "freeText02": {
@@ -123,6 +122,7 @@
         },
         "freeText09": {
           "type": "string",
+          "description": "Nombre del partner para identificación de generix.",
           "maxLength": 255
         },
         "freeLongText01": {
