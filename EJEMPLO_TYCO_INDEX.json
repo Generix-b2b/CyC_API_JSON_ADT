@@ -186,7 +186,7 @@
             "GeneralSurcharges": [
               {
                 "Charge": {
-                  "chargeReason": "Cargo General",
+                  "ChargeReason": "Cargo General",
                   "ChargeRate": 20.0,
                   "ChargeAmount": 1451.5
                 }
