@@ -116,8 +116,6 @@
         },
         "freeText08": {
           "type": "string",
-          "description": "Envío de pdf en la notificación de factura.",
-          "enum": ["yes", "no"],
           "maxLength": 3
         },
         "freeText09": {
@@ -134,7 +132,8 @@
           "maxLength": 4000
         },
         "freeBoolean1": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "Envío de pdf en la notificación de factura."
         },
         "freeBoolean2": {
           "type": "boolean"
