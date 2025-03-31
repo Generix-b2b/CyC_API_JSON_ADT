@@ -262,9 +262,10 @@
                   "NameAddress": "Nombre InvoiceLine",
                   "LineAddress": {
                     "Address": "Calle Invoice",
-                    "Address2": "LÃ­nea Calle Invoice",
+                    "Address2": "Línea Calle Invoice",
                     "PostCode": "12345",
-                    "Town": "Ciudad Third Invoice",
+                    "Town": "Ciudad InvoiceLine",
+                    "Province": "Provincia InvoiceLine",
                     "CountryCode": "ESP"
                   }
                 }
